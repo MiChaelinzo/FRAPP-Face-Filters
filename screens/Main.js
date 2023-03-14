@@ -17,24 +17,17 @@ import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import Filter from "./Filter";
 
 const data = {
-  regular: [{ id: 1, image: require("../assets/Frapp-00.png") }],
-  wayfarer: [
-    { id: 4, image: require("../assets/Frapp-03.png") },
-    { id: 5, image: require("../assets/Frapp-04.png") },
+  lips: [{ id: 1, image: require("../assets/Frapp-04.png") }],
+  fullmakeup: [
+    { id: 4, image: require("../assets/Frapp-00.png") },
+    { id: 5, image: require("../assets/Frapp-01.png") },
   ],
-  rimless: [{ id: 10, image: require("../assets/Frapp-09.png") }],
-  round: [
-    { id: 2, image: require("../assets/Frapp-01.png") },
-    { id: 3, image: require("../assets/Frapp-02.png") },
-  ],
-  aviator: [
-    { id: 6, image: require("../assets/Frapp-05.png") },
-    { id: 7, image: require("../assets/Frapp-06.png") },
-    { id: 8, image: require("../assets/Frapp-07.png") },
-    { id: 9, image: require("../assets/Frapp-08.png") },
+  blush: [
+    { id: 2, image: require("../assets/Frapp-02.png") },
+    { id: 3, image: require("../assets/Frapp-03.png") },
   ],
 };
-const categories = ["regular", "wayfarer", "rimless", "round", "aviator"];
+const categories = ["lips", "fullmakeup", "blush"];
 
 class Main extends React.Component {
   constructor(props) {
@@ -43,7 +36,7 @@ class Main extends React.Component {
       hasCamPerms: null,
       faces: [],
       currentFilter: "Filter1",
-      selectedCategory: "aviator",
+      selectedCategory: "lips",
     };
   }
   componentDidMount() {
